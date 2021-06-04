@@ -18,7 +18,7 @@ header {
 .__logo-nabeju {
   width: 280px;
   display: flex;
-  justify-content: center; }
+  justify-content: left; }
 
 /*menu nav*/
 a {
@@ -60,7 +60,8 @@ li a:hover {
   text-align: left;
   display: inline-block;
   width: 35%;
-  margin: 50px; }
+  margin-left: 150px;
+  margin-top: 100px; }
 
 .__texto-h2 {
   color: #EDEBEB; }
@@ -72,11 +73,13 @@ li a:hover {
 
 .__foto-sobre-mi {
   background-color: #8175ba;
-  width: 40%;
+  width: 35%;
   justify-content: end;
   float: none;
   padding: 10px;
-  margin: 25px;
+  margin-bottom: 140px;
+  margin-top: 50px;
+  margin-left: 120px;
   border: 2px solid #DEDCDC; }
 
 .__torta-fixed {
@@ -85,11 +88,10 @@ li a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-  font-size: 50px;
-  padding: 90px;
-  margin: 30px;
-  width: 1080px;
-  height: 250px; }
+  font-size: 30px;
+  font-weight: 100;
+  padding: 60px;
+  margin: 10px; }
 
 .__cupcake-fixed {
   background-image: url("../img/cupcake-lavanda.jpg");
@@ -97,11 +99,10 @@ li a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-  font-size: 50px;
-  padding: 90px;
-  margin: 30px;
-  width: 1080px;
-  height: 250px; }
+  font-size: 30px;
+  font-weight: 100;
+  padding: 60px;
+  margin: 10px; }
 
 .__galleta-fixed {
   background-image: url("../img/Galletas-de-lavanda.jpg");
@@ -109,11 +110,10 @@ li a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-  font-size: 50px;
-  padding: 90px;
-  margin: 30px;
-  width: 1080px;
-  height: 250px; }
+  font-size: 30px;
+  font-weight: 100;
+  padding: 60px;
+  margin: 10px; }
 
 .__cake-fixed {
   background-image: url("../img/torta-lila.jpg");
@@ -121,17 +121,16 @@ li a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-  font-size: 50px;
-  padding: 90px;
-  margin: 30px;
-  width: 1080px;
-  height: 250px;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 60px;
+  margin: 10px;
   color: #EDEBEB; }
 
 /*cards index*/
 .__cards {
   color: #DEDCDC;
-  display: grid;
+  display: flex;
   left: 15%;
   margin: 35px;
   padding: 30px; }
@@ -336,6 +335,10 @@ table {
   display: grid;
   justify-self: start; }
 
+.conteiner-formulario {
+  margin-left: 120px;
+  margin-bottom: 30px; }
+
 /*footer*/
 #__footer {
   background-color: #EDEBEB;
@@ -344,4 +347,14 @@ table {
   height: auto;
   padding: 1em;
   text-align: center;
-  top: 100%; }
+  top: 100%;
+  font-size: 15px;
+  text-align: right; }
+
+@media (min-width: 400px) and (max-width: 668px) {
+  #__footer {
+    font-size: 10px; } }
+
+@media (min-width: 400px) and (max-width: 990px) {
+  .__cards {
+    display: grid; } }
